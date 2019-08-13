@@ -1,0 +1,687 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png" />
+	<link rel="icon" type="image/png" href="assets/img/favicon.png" />
+	<title>MLCLOUDSTUDIO</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+	<!-- Canonical SEO -->
+    <link rel="canonical" href="https://www.creative-tim.com/product/paper-bootstrap-wizard"/>
+<!-- 
+    <meta name="keywords" content="wizard, bootstrap wizard, creative tim, long forms, 3 step wizard, sign up wizard, beautiful wizard, long forms wizard, wizard with validation, paper design, paper wizard bootstrap, bootstrap paper wizard">
+    <meta name="description" content="Paper Bootstrap Wizard is a fully responsive wizard that is inspired by our famous Paper Kit  and comes with 3 useful examples and 5 colors.">
+
+   
+    <meta itemprop="name" content="Paper Bootstrap Wizard by Creative Tim">
+    <meta itemprop="description" content="Paper Bootstrap Wizard is a fully responsive wizard that is inspired by our famous Paper Kit  and comes with 3 useful examples and 5 colors.">
+    <meta itemprop="image" content="https://s3.amazonaws.com/creativetim_bucket/products/49/opt_pbw_thumbnail.jpg">
+
+   
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@creativetim">
+    <meta name="twitter:title" content="Paper Bootstrap Wizard by Creative Tim">
+    <meta name="twitter:description" content="Paper Bootstrap Wizard is a fully responsive wizard that is inspired by our famous Paper Kit  and comes with 3 useful examples and 5 colors.">
+    <meta name="twitter:creator" content="@creativetim">
+    <meta name="twitter:image" content="https://s3.amazonaws.com/creativetim_bucket/products/49/opt_pbw_thumbnail.jpg">
+
+    
+    <meta property="og:title" content="Paper Bootstrap Wizard by Creative Tim | Free Boostrap Wizard" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://demos.creative-tim.com/paper-bootstrap-wizard/wizard-list-place.html" />
+    <meta property="og:image" content="https://s3.amazonaws.com/creativetim_bucket/products/49/opt_pbw_thumbnail.jpg" />
+    <meta property="og:description" content="Paper Bootstrap Wizard is a fully responsive wizard that is inspired by our famous Paper Kit  and comes with 3 useful examples and 5 colors." />
+    <meta property="og:site_name" content="Creative Tim" /> -->
+
+	<!-- CSS Files -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/css/paper-bootstrap-wizard.css" rel="stylesheet" />
+
+	<!-- CSS Just for demo purpose, don't include it in your project -->
+	<link href="assets/css/demo.css" rel="stylesheet" />
+
+	<!-- Fonts and Icons -->
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
+	<link href="assets/css/themify-icons.css" rel="stylesheet">
+	<!-- Google Tag Manager -->
+	<style type="text/css">
+		.close {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #333;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
+*{
+	border:none;
+}
+
+
+
+	@media only screen   
+and (min-device-width : 1025px)   
+  
+{
+	.wizard-footer{
+margin-top: -50px;
+}
+	#Output1{
+		margin-top: 100px;
+
+	}
+		#Output2{
+			margin-top: -100px;
+
+	}
+
+		#Output3{
+			margin-top: -60px;
+
+	}
+	body{
+		overflow: hidden;
+	}
+
+	.wizard-card{
+		min-height: 530px;
+		
+	}
+
+		.btn-next{
+		margin-top: 30px;
+	}
+	.btn-previous{
+		margin-top: 30px;
+
+	}
+	.btn-finish{
+		margin-top: 30px;
+	}
+
+}
+
+	@media only screen   
+and (min-device-width : 360px)   
+and (max-device-width : 700px)  
+{
+body{
+	overflow: scroll;
+}
+
+	.wizard-card{
+		min-height: 530px;
+		
+	}
+
+		.btn-next{
+		margin-top: 30px;
+	}
+	.btn-previous{
+		margin-top: 30px;
+
+	}
+	.btn-finish{
+		margin-top: 30px;
+	}
+	
+
+	#Output-description{
+		margin-top: 40px;
+
+	}
+		#Output2{
+			margin-top: -20px;
+
+	}
+
+		#Output3{
+			margin-top: -40px;
+
+	}
+
+.pull-right{
+	margin-right: -10px;
+}
+	}
+	html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+@media only screen   
+and (max-device-width : 400px)    
+{
+	#select_align{
+		margin-left: -30px;
+
+	}
+	.wizard-card{
+		min-height: 580px;
+		height: 570px;
+	}
+
+	.wizard-foooter{
+		margin-top: -10px;
+	}
+
+	.btn-next{
+		margin-top: -20px;
+	}
+	.btn-previous{
+		margin-top: -20px;
+
+	}
+	.btn-finish{
+		margin-top: -20px;
+	}
+}
+
+
+	</style>
+	<!-- End Google Tag Manager -->
+
+	</head>
+
+	<body>
+		<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKDMSK6"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<div class="image-container " id="popup" style="background-color: rgb(0,0,0);" >
+<!-- background-image: url('assets/img/paper-1.jpeg') -->
+
+	    <!--   Big container   -->
+	    <div class="container">
+	        <div class="row" style="margin: 0 auto;">
+		        <div class="col-sm-8 col-sm-offset-2">
+
+		            <!--      Wizard container        -->
+		            <div class="wizard-container" style="margin-top: -80px;" style="max-height: 100px;">
+
+		                <div class="card wizard-card" data-color="green" id="wizardProfile" >
+		                    <form action="" method="">
+		                <!--        You can switch " data-color="orange" "  with one of the next bright colors: "blue", "green", "orange", "red", "azure"          -->
+
+		                    	<div class="wizard-header text-center">
+		                        	<h4 class="wizard-title">Start your ML Journey with Problem Statement</h4>
+									<p class="category">We will find out optimized solution!!</p>
+		                    	</div>
+
+								<div class="wizard-navigation" style="margin-top: -15px;">
+									<div class="progress-with-circle">
+									     <div class="progress-bar" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="3" style="width: 21%;"></div>
+									</div>
+									<ul>
+			                            <li>
+											<a href="#about" data-toggle="tab">
+												<div class="icon-circle">
+													<i class="ti-files"></i>
+												</div>
+												Use-Case
+											</a>
+										</li>
+			                            <li>
+											<a href="#account" data-toggle="tab">
+												<div class="icon-circle">
+													<i class="ti-pencil-alt"></i>
+												</div>
+												Output
+											</a>
+										</li>
+			                            <li>
+											<a href="#address" data-toggle="tab">
+												<div class="icon-circle">
+													<i class="ti-ruler-alt-2"></i>
+												</div>
+												Success Metrics
+											</a>
+										</li>
+			                        </ul>
+								</div>
+		                        <div class="tab-content" style="margin-top: -10px;">
+		                            <div class="tab-pane" id="about">
+		                            	<div class="row">
+										
+											<h6 class="info-text"> Tell us your problem in native language!!</h6>
+											<div style="margin-bottom : 10px;margin-top:-30px;" id="select_align">
+												<div id="div_language" style="margin: auto;
+  width: 50%;
+  padding: 10px;">
+													<div class="row">
+											  <div class="form-group col-md-6">
+    <select id="select_language" class = "form-control" style="width: 150px;height: 32px;" onchange="updateCountry()"></select>
+    </div>
+    <div class="form-group col-md-6">
+    <select id="select_dialect" class = "form-control" style="width: 150px;height: 32px;display: hidden;"></select>
+  </div>
+</div>
+</div>
+</div>
+											<div class="col-sm-10 col-sm-offset-1">
+						<!-- 						<div class="picture-container">
+													<div class="picture">
+														<img src="assets/img/default-avatar.jpg" class="picture-src" id="wizardPicturePreview" title="" />
+														<input type="file" id="wizard-picture">
+													</div>
+													<h6>Choose Picture</h6>
+												</div> -->
+											</div>
+											<div class="col-sm-10 col-sm-offset-1" style="margin-top: -20px;margin-bottom: 10px;">
+												<div class="form-group">
+													<label>Problem Statement <small>(required)</small></label>
+													<textarea class="form-control" placeholder="" rows="2" placeholder="Problem Statement..." id="statement" required="required" x-webkit-speech></textarea>
+													<!-- <input name="firstname" type="text" class="form-control" placeholder="Problem Statement..." id="statement" x-webkit-speech> -->
+													<i class="ti-microphone" style="float: right;margin-right: -20px;margin-top:-35px;" onclick="speak('statement')"></i>
+												</div>
+											</div>
+<!-- 											<div class="col-sm-10 col-sm-offset-1">
+												<div class="form-group">
+													<label>Use Case <small>(required)</small></label>
+													<input name="lastname" type="text" class="form-control" placeholder="Use cases..." id="usecase">
+													<i class="ti-microphone" style="float: right;margin-right: -20px;margin-top:-25px;" onclick="speak('usecase')"></i>
+												</div>
+											</div> -->
+											<div class="col-sm-10 col-sm-offset-1" style="margin-top: -15px;">
+												<div class="form-group">
+													<label>Reference Links <small>(required)</small></label>
+													<!-- <input name="email" type="text" class="form-control" placeholder="Reference link ..." id="reference"> -->
+													<textarea class="form-control" placeholder="" rows="1" placeholder="Reference link ..." id="reference" required="required" x-webkit-speech></textarea>
+													<i class="ti-microphone" style="float: right;margin-right: -20px;margin-top:-25px;" onclick="speak('reference')"></i>
+												</div>
+											</div>
+										<div class="col-sm-10 col-sm-offset-1" style="margin-top: -10px;">
+												<div class="form-group">
+													<label>Use case <small>(required)</small></label>
+														<select id="use case" class = "form-control" required>
+															<option disabled selected value="">Select one of the option</option>
+															<option>Classification</option>
+															<option>Regression</option>
+															<option>Reinforcement Learning</option>
+															<option>Classification</option>
+															<option>Recommendation</option>
+
+														</select>
+												</div>
+											</div>
+										</div>
+		                            </div>
+		                            <div class="tab-pane" id="account">
+		                            <div class="col-sm-10 col-sm-offset-1" style="margin-top: 20px;">
+												<div class="form-group" id="Output1" >
+													<label id="Output-description">Output Description <small>(required)</small></label>
+													<!-- <input name="email" type="text" class="form-control" placeholder="Reference link ..." id="reference"> -->
+													<textarea class="form-control" placeholder="" rows="2" placeholder="Reference link ..." id="reference" required="required" x-webkit-speech ></textarea>
+													<i class="ti-microphone" style="float: right;margin-right: -20px;margin-top:-25px;" onclick="speak('reference')"></i>
+												</div>
+											</div>
+		                                
+		                                <div class="row" id="Output2" >
+		                                	
+		                                    <div class="col-sm-8 col-sm-offset-2" style="margin-top: -10px;">
+		                                    	<h5 class="info-text"> Output Format </h5>
+		                                    	<div id="Output3">
+		                                        <div class="col-sm-6">
+		                                            <div class="choice" data-toggle="wizard-checkbox">
+		                                                <input type="checkbox" name="jobb" value="JSON">
+		                                                <div class="card card-checkboxes card-hover-effect">
+		                                                    <i class="ti-files"></i>
+															<p>JSON</p>
+		                                                </div>
+		                                            </div>
+		                                        </div>
+		                                        <div class="col-sm-6">
+		                                            <div class="choice" data-toggle="wizard-checkbox">
+		                                                <input type="checkbox" name="jobb" value="HTML" checked>
+		                                                <div class="card card-checkboxes card-hover-effect">
+		                                                    <i class="ti-html5"></i>
+															<p>HTML</p>
+		                                                </div>
+		                                            </div>
+		                                        </div>
+		                                    </div>
+<!-- 		                                        <div class="col-sm-4">
+		                                            <div class="choice" data-toggle="wizard-checkbox">
+		                                                <input type="checkbox" name="jobb" value="Develop">
+		                                                <div class="card card-checkboxes card-hover-effect">
+		                                                    <i class="ti-star"></i>
+															<p>Develop</p>
+		                                                </div>
+		                                            </div>
+		                                        </div> -->
+		                                    </div>
+		                                </div>
+		                            </div>
+		                            <div class="tab-pane" id="address">
+		                                <div class="row">
+<!-- 		                                    <div class="col-sm-12">
+		                                        <h5 class="info-text"> Success Metric </h5>
+		                                    </div>
+		                                    <div class="col-sm-7 col-sm-offset-1">
+		                                    	<div class="form-group">
+		                                            <label>Street Name</label>
+		                                            <input type="text" class="form-control" placeholder="5h Avenue">
+		                                        </div>
+		                                    </div>
+		                                    <div class="col-sm-3">
+		                                        <div class="form-group">
+		                                            <label>Street Number</label>
+		                                            <input type="text" class="form-control" placeholder="242">
+		                                        </div>
+		                                    </div>
+		                                    <div class="col-sm-5 col-sm-offset-1">
+		                                        <div class="form-group">
+		                                            <label>City</label>
+		                                            <input type="text" class="form-control" placeholder="New York...">
+		                                        </div>
+		                                    </div> -->
+		                                    <div class="col-sm-10 col-sm-offset-1" >
+		                                        <div class="form-group" style="margin-top: 30px;">
+		                                            <label>Accuracy</label><br>
+		                                            <select name="accuracy" class="form-control">
+		                                                <option value="Below 50%"> Below 50% </option>
+		                                                <option value="50% - 60%"> 50% - 60% </option>
+		                                                <option value="60% - 70%"> 60% - 70% </option>
+		                                                <option value="70% - 80%"> 70% - 80% </option>
+		                                                <option value="80% - 90%"> 80% - 90% </option>
+		                                                <option value="Above 90%"> Above 90% </option>
+		                                            </select>
+
+
+		                                        </div>
+<!-- 		            						<div class="form-group">
+		                                            <label>Metric 2</label><br>
+		                                            <select name="accuracy" class="form-control">
+		                                                <option value="Below 50%"> Below 50% </option>
+		                                                <option value="50% - 60%"> 50% - 60% </option>
+		                                                <option value="60% - 70%"> 60% - 70% </option>
+		                                                <option value="70% - 80%"> 70% - 80% </option>
+		                                                <option value="80% - 90%"> 80% - 90% </option>
+		                                                <option value="Above 90%"> Above 90% </option>
+		                                            </select>
+
+
+		                                        </div> -->
+
+
+		                                    </div>
+		                     <div class="col-sm-10 col-sm-offset-1" style="margin-top: 30px;">
+		                         <div class="form-group">
+		                         	<label>Additional Metrics (Optional)</label>
+													<input class="form-control" placeholder="Metric " id="reference" style="font-style: bold" x-webkit-speech>
+													<input class="form-control" placeholder="Metric Value" id="reference" x-webkit-speech>
+													<i class="ti-microphone" style="float: right;margin-right: -20px;margin-top:-25px;" onclick="speak('reference')"></i>
+												
+										</div>
+									</div>
+		                                </div>
+		                            </div>
+		                        </div>
+		                        <div class="wizard-footer">
+		                            <div class="pull-right">
+		                                <input type='button' id="next" class='btn btn-next btn-fill btn-success btn-wd' name='next' value='Next' />
+		                                <input type='button' id="finish" class='btn btn-finish btn-fill btn-success btn-wd' name='finish' value='Finish' id="finish" onclick="parent.location = '../../dashboard.html'" />
+		                            </div>
+
+		                            <div class="pull-left">
+		                                <input type='button' id="finish" class='btn btn-previous btn-default btn-wd' name='previous' value='Previous' />
+		                            </div>
+		                            <div class="clearfix"></div>
+		                        </div>
+		                    </form>
+		                </div>
+		            </div> <!-- wizard container -->
+		        </div>
+	    	</div><!-- end row -->
+		</div> <!--  big container -->
+
+
+	</div>
+<!-- <a href="#" class="close" id="close"> -->
+  <script>
+
+
+// function to create cookies
+function createCookie(name,value,days) {
+  if (days) {
+    var date = new Date();
+    date.setTime(date.getTime()+(days*24*60*60*1000));
+    var expires = "; expires="+date.toGMTString();
+  }
+  else var expires = "";
+  document.cookie = name+"="+value+expires+"; path=/";
+}
+
+createCookie("Algo", "Predictive Lead Scoring");
+console.log("popup"+document.cookie);
+// createCookie("author", "aurelio");
+
+var langs =
+[['Afrikaans',       ['af-ZA']],
+ ['አማርኛ',           ['am-ET']],
+ ['Azərbaycanca',    ['az-AZ']],
+ ['বাংলা',            ['bn-BD', 'বাংলাদেশ'],
+                     ['bn-IN', 'ভারত']],
+ ['Bahasa Indonesia',['id-ID']],
+ ['Bahasa Melayu',   ['ms-MY']],
+ ['Català',          ['ca-ES']],
+ ['Čeština',         ['cs-CZ']],
+ ['Dansk',           ['da-DK']],
+ ['Deutsch',         ['de-DE']],
+ ['English',         ['en-AU', 'Australia'],
+                     ['en-CA', 'Canada'],
+                     ['en-IN', 'India'],
+                     ['en-KE', 'Kenya'],
+                     ['en-TZ', 'Tanzania'],
+                     ['en-GH', 'Ghana'],
+                     ['en-NZ', 'New Zealand'],
+                     ['en-NG', 'Nigeria'],
+                     ['en-ZA', 'South Africa'],
+                     ['en-PH', 'Philippines'],
+                     ['en-GB', 'United Kingdom'],
+                     ['en-US', 'United States']],
+['हिन्दी',             ['hi-IN']],
+ ['Español',         ['es-AR', 'Argentina'],
+                     ['es-BO', 'Bolivia'],
+                     ['es-CL', 'Chile'],
+                     ['es-CO', 'Colombia'],
+                     ['es-CR', 'Costa Rica'],
+                     ['es-EC', 'Ecuador'],
+                     ['es-SV', 'El Salvador'],
+                     ['es-ES', 'España'],
+                     ['es-US', 'Estados Unidos'],
+                     ['es-GT', 'Guatemala'],
+                     ['es-HN', 'Honduras'],
+                     ['es-MX', 'México'],
+                     ['es-NI', 'Nicaragua'],
+                     ['es-PA', 'Panamá'],
+                     ['es-PY', 'Paraguay'],
+                     ['es-PE', 'Perú'],
+                     ['es-PR', 'Puerto Rico'],
+                     ['es-DO', 'República Dominicana'],
+                     ['es-UY', 'Uruguay'],
+                     ['es-VE', 'Venezuela']],
+ ['Euskara',         ['eu-ES']],
+ ['Filipino',        ['fil-PH']],
+ ['Français',        ['fr-FR']],
+ ['Basa Jawa',       ['jv-ID']],
+ ['Galego',          ['gl-ES']],
+ ['ગુજરાતી',           ['gu-IN']],
+ ['Hrvatski',        ['hr-HR']],
+ ['IsiZulu',         ['zu-ZA']],
+ ['Íslenska',        ['is-IS']],
+ ['Italiano',        ['it-IT', 'Italia'],
+                     ['it-CH', 'Svizzera']],
+ ['ಕನ್ನಡ',             ['kn-IN']],
+ ['ភាសាខ្មែរ',          ['km-KH']],
+ ['Latviešu',        ['lv-LV']],
+ ['Lietuvių',        ['lt-LT']],
+ ['മലയാളം',          ['ml-IN']],
+ ['मराठी',             ['mr-IN']],
+ ['Magyar',          ['hu-HU']],
+ ['ລາວ',              ['lo-LA']],
+ ['Nederlands',      ['nl-NL']],
+ ['नेपाली भाषा',        ['ne-NP']],
+ ['Norsk bokmål',    ['nb-NO']],
+ ['Polski',          ['pl-PL']],
+ ['Português',       ['pt-BR', 'Brasil'],
+                     ['pt-PT', 'Portugal']],
+ ['Română',          ['ro-RO']],
+ ['සිංහල',          ['si-LK']],
+ ['Slovenščina',     ['sl-SI']],
+ ['Basa Sunda',      ['su-ID']],
+ ['Slovenčina',      ['sk-SK']],
+ ['Suomi',           ['fi-FI']],
+ ['Svenska',         ['sv-SE']],
+ ['Kiswahili',       ['sw-TZ', 'Tanzania'],
+                     ['sw-KE', 'Kenya']],
+ ['ქართული',       ['ka-GE']],
+ ['Հայերեն',          ['hy-AM']],
+ ['தமிழ்',            ['ta-IN', 'இந்தியா'],
+                     ['ta-SG', 'சிங்கப்பூர்'],
+                     ['ta-LK', 'இலங்கை'],
+                     ['ta-MY', 'மலேசியா']],
+ ['తెలుగు',           ['te-IN']],
+ ['Tiếng Việt',      ['vi-VN']],
+ ['Türkçe',          ['tr-TR']],
+ ['اُردُو',            ['ur-PK', 'پاکستان'],
+                     ['ur-IN', 'بھارت']],
+ ['Ελληνικά',         ['el-GR']],
+ ['български',         ['bg-BG']],
+ ['Pусский',          ['ru-RU']],
+ ['Српски',           ['sr-RS']],
+ ['Українська',        ['uk-UA']],
+ ['한국어',            ['ko-KR']],
+ ['中文',             ['cmn-Hans-CN', '普通话 (中国大陆)'],
+                     ['cmn-Hans-HK', '普通话 (香港)'],
+                     ['cmn-Hant-TW', '中文 (台灣)'],
+                     ['yue-Hant-HK', '粵語 (香港)']],
+ ['日本語',           ['ja-JP']],
+ ['ภาษาไทย',         ['th-TH']]];
+for (var i = 0; i < langs.length; i++) {
+  select_language.options[i] = new Option(langs[i][0], i);
+}
+select_language.selectedIndex = 10;
+updateCountry();
+select_dialect.selectedIndex = 10;
+showInfo('info_start');
+function updateCountry() {
+  for (var i = select_dialect.options.length - 1; i >= 0; i--) {
+    select_dialect.remove(i);
+  }
+  var list = langs[select_language.selectedIndex];
+  for (var i = 1; i < list.length; i++) {
+    select_dialect.options.add(new Option(list[i][1], list[i][0]));
+  }
+  count =0;
+  
+  select_dialect.style.visibility = list[1].length == 1 ? 'hidden' : 'visible';
+  // if(select_dialect.style.visibility == 'hidden'){
+  // 	if(screen.width >= 768 && count==0){
+  // 		// document.getElementById('select_language').style.textAlign = "center";
+  // 		document.getElementById('select_language').style.marginLeft = (screen.width/375)*20+"px";
+  // 		count = 1;
+  // 	}else{
+  // 		document.getElementById('select_language').style.marginLeft = 0+"px";
+
+  // 	}
+  // }
+
+  //   if(select_dialect.style.visibility == 'visible'){
+  //   	if(count==1){
+  //   		document.getElementById('select_language').style.marginLeft = -(screen.width/375)*20+"px";
+  //   		count=0;
+
+  //   	}
+  //    	// document.getElementById('select_align').style.marginLeft = 0+"px";
+  //    	// document.getElementById('select_language').style.width = "150px";
+  // 	// document.getElementById('select_align').style.textAlign = "center";
+  // }
+}
+
+
+
+    function speak(id){
+    window.SpeechRecognition = window.webkitSpeechRecognition || window.SpeechRecognition;
+    let finalTranscript = '';
+    let recognition = new window.SpeechRecognition();
+    recognition.lang = select_dialect.value;
+    recognition.interimResults = true;
+    recognition.maxAlternatives = 10;
+    recognition.continuous = true;
+    recognition.onresult = (event) => {
+      let interimTranscript = '';
+      for (let i = event.resultIndex, len = event.results.length; i < len; i++) {
+        let transcript = event.results[i][0].transcript;
+        if (event.results[i].isFinal) {
+          finalTranscript += transcript;
+        } else {
+          interimTranscript += transcript;
+        }
+      }
+      document.getElementById(id).value = finalTranscript;
+    }
+    recognition.start();
+  }
+
+var mic = document.getElementById('speechinput');
+mic.onfocus = mic.blur;
+mic.onwebkitspeechchange = function(e) {
+document.getElementById('mytextarea').value = speechinput .value;  
+};
+
+// function quitBox(cmd)
+// {   
+//     if (cmd=='finish')
+//     {
+//         open(location, '_self').close();
+//     }   
+//     return false;   
+// }
+  </script>
+</body>
+
+	<!--   Core JS Files   -->
+	<script src="assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/js/jquery.bootstrap.wizard.js" type="text/javascript"></script>
+
+	<!--  Plugin for the Wizard -->
+	<script src="assets/js/demo.js" type="text/javascript"></script>
+	<script src="assets/js/paper-bootstrap-wizard.js" type="text/javascript"></script>
+
+	<!--  More information about jquery.validate here: https://jqueryvalidation.org/	 -->
+	<script src="assets/js/jquery.validate.min.js" type="text/javascript"></script>
+
+</html>
